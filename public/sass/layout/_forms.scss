@@ -1,0 +1,21 @@
+.header__form__text-input {
+  background-color: transparent;
+  border: none;
+	border-bottom: 2px solid white;
+	font: inherit;
+	padding: 0.3rem;
+	color: white;
+
+	@media (max-width: $screen-xs-min) {
+		width: 80px;
+	}
+}
+
+.header__form__submit {
+	background: transparent;
+	color: white;
+	font: inherit;
+	border: none;
+	border: 2px solid white;
+	padding: 0.3rem;
+}

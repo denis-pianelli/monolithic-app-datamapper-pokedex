@@ -1,0 +1,35 @@
+// text
+$text-color: hsl(0, 0%, 100%);
+$font-weights: (
+  'regular': 400,
+  'medium': 500,
+  'bold': 700,
+);
+
+// colors
+$type-color: (
+  'acier': #aaaabb,
+  'combat': #bb5544,
+  'dragon': #7766ee,
+  'eau': #3399ff,
+  'electrik': #ffbb33,
+  'feu': #ff4422,
+  'glace': #77ddff,
+  'insecte': #aabb22,
+  'normal': #bbaabb,
+  'plante': #77cc55,
+  'poison': #aa5599,
+  'psy': #ff5599,
+  'roche': #bbaa66,
+  'sol': #ddbb55,
+  'spectre': #6666bb,
+  'tenebre': #665544,
+  'vol': #6699ff,
+);
+
+// media
+$screen-xs-min: 480px;
+$screen-sm-min: 768px;
+$screen-md-min: 992px;
+$screen-lg-min: 1200px;
+

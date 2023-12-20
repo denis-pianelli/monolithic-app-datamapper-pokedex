@@ -1,0 +1,18 @@
+.header {
+	height: 60px;
+	position: sticky;
+  top: 0;
+	background-color: black;
+	color: $text-color;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 1rem;
+	z-index: 9999;
+
+	&__title {
+		font-weight: weigh(bold);
+		font-size: 1.5rem;
+		text-transform: uppercase;
+	}
+}

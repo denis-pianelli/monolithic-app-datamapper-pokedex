@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- style -->
+    <link rel="stylesheet" href="/css/main.css" />
+
+    <title>PokedEXPRESS</title>
+  </head>
+  <body>
+		<header class="header">
+			<a href="/" class="header__link">
+				<h1 class="header__title">Pokédex</h1>
+			</a>
+			<form class="header__form" action="/search/name" method="get">
+				<input class="header__form__text-input" type="text" name="name" id="name" placeholder="Search...">
+				<input class="header__form__submit" type="submit" value="Chercher">
+			</form>
+		</header>

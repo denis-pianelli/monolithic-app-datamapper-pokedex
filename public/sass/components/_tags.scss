@@ -1,0 +1,78 @@
+.pokemon-card__type-container {
+  @include flexCenter(row);
+  gap: 0.5rem;
+
+  @media (max-width: $screen-xs-min) {
+    margin: 0.3rem;
+  }
+
+}
+
+.pokemon-card__type {
+	@include flexCenter(row);
+	width: 120px;
+
+  &--acier {
+    background-color: type(acier);
+  }
+  &--combat {
+    background-color: type(combat);
+  }
+  &--dragon {
+    background-color: type(dragon);
+  }
+  &--eau {
+    background-color: type(eau);
+  }
+  &--electrik {
+    background-color: type(electrik);
+  }
+  &--feu {
+    background-color: type(feu);
+  }
+  &--glace {
+    background-color: type(glace);
+  }
+  &--insecte {
+    background-color: type(insecte);
+  }
+  &--normal {
+    background-color: type(normal);
+  }
+  &--plante {
+    background-color: type(plante);
+  }
+  &--poison {
+    background-color: type(poison);
+    color: $text-color;
+  }
+  &--psy {
+    background-color: type(psy);
+  }
+  &--roche {
+    background-color: type(roche);
+  }
+  &--sol {
+    background-color: type(sol);
+  }
+  &--spectre {
+    background-color: type(spectre);
+    color: $text-color;
+  }
+  &--tenebres {
+    background-color: type(tenebres);
+    color: $text-color;
+  }
+  &--vol {
+    background-color: type(vol);
+  }
+
+  @media (max-width: $screen-md-min) {
+    font-size: 0;
+    width: 16px;
+    height: 16px;
+    padding: 0;
+    border-radius: 50%;
+  }
+
+}

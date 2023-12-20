@@ -1,0 +1,72 @@
+<%- include('partials/header.ejs') %>
+
+<main>
+	<section class="pokemon-detail">
+		<article>
+
+			<% if (locals.pokemon) { %>
+				<h2>#<%= pokemon.numero %> <%= pokemon.nom %></h2>
+				<div class="pokemon-detail-container">
+					<div class="pokemon-image-container">
+						<img class="pokemon-detail__image" src="/img/<%= pokemon.numero %>.png" alt="Photo de <%= pokemon.nom %>">
+						<div class="pokemon-type-container">
+							<% for (const type of pokemon.type) { %>
+							<p class="pokemon-card__type pokemon-card__type--<%= type.name.toLowerCase().normalize("NFD").replace(/\p{Diacritic}/gu, "") %>"><%= type.name %></p>
+							<% } %>
+						</div>
+					</div>
+					<div class="pokemon-detail__stats">
+						<h4>Statistiques</h4>
+						<div class="stats-container">
+							<p>PV</p>
+							<p><%= pokemon.pv %></p>
+							<div class="stat-bar">
+								<div class="stat-bar-filler" style="--fill-width: <%= pokemon.pv / 255 * 100 %>%;">
+								</div>
+							</div>
+						</div>
+						<div class="stats-container">
+							<p>Attaque</p>
+							<p><%= pokemon.attaque %></p>
+							<div class="stat-bar">
+								<div class="stat-bar-filler"style="--fill-width: <%= pokemon.attaque / 255 * 100 %>%;"></div>
+							</div>
+						</div>
+						<div class="stats-container">
+							<p>Défense</p>
+							<p><%= pokemon.defense %></p>
+							<div class="stat-bar">
+								<div class="stat-bar-filler" style="--fill-width: <%= pokemon.defense /255 *100 %>%;"></div>
+							</div>
+						</div>
+						<div class="stats-container">
+							<p>Attaque spé.</p>
+							<p><%= pokemon.attaque_spe %></p>
+							<div class="stat-bar">
+								<div class="stat-bar-filler" style="--fill-width: <%= pokemon.attaque_spe / 255 * 100 %>%;"></div>
+							</div>
+						</div>
+						<div class="stats-container">
+							<p>Défense spé.</p>
+							<p><%= pokemon.defense_spe %></p>
+							<div class="stat-bar">
+								<div class="stat-bar-filler" style="--fill-width: <%= pokemon.defense_spe / 255 * 100 %>%;"></div>
+							</div>
+						</div>
+						<div class="stats-container">
+							<p>Vitesse</p>
+							<p><%= pokemon.vitesse %></p>
+							<div class="stat-bar">
+								<div class="stat-bar-filler" style="--fill-width: <%= pokemon.vitesse / 255 * 100 %>%;"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<p><a href="/">Revenir à la liste</a></p>
+			<% } %>
+
+		</article>
+	</section>
+</main>
+
+<%- include('partials/footer.ejs') %>

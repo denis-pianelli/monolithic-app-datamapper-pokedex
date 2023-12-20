@@ -1,0 +1,7 @@
+@function weigh($weight-name) {
+  @return map-get($map: $font-weights, $key: $weight-name);
+}
+
+@function type($type-name) {
+  @return map-get($map: $type-color, $key: $type-name);
+}

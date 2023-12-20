@@ -1,0 +1,44 @@
+main {
+  margin: 1rem;
+}
+
+.pokemon-cards {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(20%, 400px));
+  grid-template-rows: repeat(3, auto);
+  justify-content: center;
+  gap: 1rem;
+
+  @media (max-width: $screen-xs-min) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.pokemon-card {
+  background-color: #efe3e3;
+  padding: 1rem;
+  border-radius: 0.3rem;
+  transition: all 0.3s ease;
+
+  &__container {
+    @include flexCenter(column);
+  }
+
+  &__image {
+    max-width: 50%;
+    margin: 1rem;
+  }
+
+  &__type-container {
+    margin: 1rem;
+  }
+
+  &__type {
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+  }
+
+  &:hover {
+    transform: translateY(-2%);
+  }
+}

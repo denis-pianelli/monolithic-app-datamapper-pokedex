@@ -1,0 +1,17 @@
+.error404 {
+	min-height: calc(100vh - 92px);
+	text-align: center;
+	margin-top: 6rem;
+
+	&__title {
+		font-size: 16rem;
+	}
+
+	&__text {
+		font-size: 3.5rem;
+	}
+
+	&__image {
+		margin-top: 3rem;
+	}
+}
